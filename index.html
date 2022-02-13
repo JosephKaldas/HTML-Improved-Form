@@ -18,6 +18,7 @@
                 <input type="text" id="firstname" name="firstname">
                 <label for="lastname">Your Last Name</label>
                 <input type="text" id="lastname" name="lastname">
+                <span class="required-field">*Required</span>
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
@@ -86,8 +87,25 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="text" id="zip" name="zip">
-                </div>
+                    <input type="number" id="zip" name="zip">
+                    <label for="age">Your Age</label>
+                    <input type="number" name="age" id="age" min="21" max="120">
+                    <h5>Must be age 21 or older to enter the contest</h5>
+                    
+                    <form action="/action_page.php">
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username"><br>
+                       
+                      </form>
+                      <div>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd">
+                      </div>
+                      
+                    
+                     
+                      
+                
             </fieldset>
 
             <fieldset>
@@ -109,6 +127,12 @@
                     <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
                     <label for="new-zealand">New Zealand</label>
                 </div>
+                <form action="/action_page.php">
+                    <label for="country_code">Country code:</label>
+                    <input type="text" id="country_code" name="country_code"
+                    pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+                    <input type="submit">
+                  </form>
                 <div>
                     <label for="color">Favorite Color</label>
                     <input type="color" id="color" name="color">
